@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Cheriyan KM</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/home-animated-pastels.gif">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/mainpage.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<meta name="keywords" content="Cheriyan K M, Web Designer, Web Application developement, Nilambur, Malappuram, Kerala" />
+<!--google fonts-->
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+<div class="container" ng-controller="myCtrl" ng-app="myApp">
+	<div class="col-xs-12 heading">
+		<div class="headLeft"><button type="button" class="btn btn-default logoutbtn" ng-click="goHome('/family/'+nameOfUser.split('/')[2])">Home</button></div>
+		<div class="headLeft"><button type="button" class="btn btn-default logoutbtn" ng-click="goToAddMember()">Add Member</button></div>
+		<div class="headRight"><button type="button" class="btn btn-default logoutbtn" ng-click="logout()">Logout</button></div>
+	</div>
+    <!--div class="col-xs-12 profileView">
+    	<div class="col-xs-4 profileLeft">
+        <img align="middle" class="fb-image-profile thumbnail" src="http://powellong.com/data/wallpapers/59/WDF_1048688.jpg" alt="Profile image example"/>
+      </div>
+      <div class="col-xs-8 profileRight">
+        <i class="fa fa-spinner fa-pulse fa-3x fa-fw looadingSpinner" aria-hidden="true" ng-hide="loading"></i>
+        <div class="profileDetails" ng-show="loading">
+            <h1>{{userInfo.name}}</h1>
+            <p>Parents: <button type="button" class="btn btn-default newProfileBtn" ng-click="getNewProfile(userInfo.mother)">{{mother.name}}</button>
+            , <button type="button" class="btn btn-default newProfileBtn" ng-click="getNewProfile(userInfo.father)">{{father.name}}</button>
+            <br><hr>Spouse: <button type="button" class="btn btn-default newProfileBtn" ng-click="getNewProfile(userInfo.spouse)">
+            {{spouse.name}}</button>
+            <br><hr>Childrens: <button type="button" class="btn btn-default newProfileBtn" ng-repeat="child in childrens" ng-click="getNewProfile(child.uri)">
+            {{child.name}}</button>
+            <br><hr>Siblings: <button type="button" class="btn btn-default newProfileBtn" ng-repeat="sib in sibligs" ng-click="getNewProfile(sib.uri)">
+            {{sib.name}}</button>
+            </p>
+        </div>
+      </div>
+    </div-->
+    <div class="col-xs-12 footer" ng-show="loading">
+    	<div class="footer-content">Designed by <a href="cheriyankm.com"> Cheriyan K M </a></div>
+    </div>
+</div>
+</body>
+</html>
